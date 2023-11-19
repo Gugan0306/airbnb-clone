@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Clone</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <!-- Price bar -->
+<section class="flex justify-center w-screen mt-0">
+    <div class="flex items-center justify-between rounded-xl p-4 border w-[600px] h-16">
+        <div class="w-[460px] flex justify-start">
+            <p class="border-r-2 border-gray-100 pr-4 text-base font-medium">Display total price</p>
+            <p class="border-gray-100 text-base text-gray-400 pl-4">Includes all fees, before taxes</p>
+        </div>
+        <span class="material-symbols-outlined">toggle_on</span>
+    </div>
+</section>
+    <div class="h-screen">
+        <div class="w-screen grid grid-cols-3 h-20 border-b-[1px] items-center fixed top-0 bg-white">
+            <div class="pl-15">
+                <img src="static/airbnb-logo.png" class="h-16 w-28">
+            </div>
+
+            <div class="px-8">
+                <div class="flex items-center justify-evenly rounded-full shadow-md h-12 w-96 border">
+                    <button class="border-r-2 border-gray-100 px-4 text-sm font-medium">Anywhere</button>
+                    <button class="border-r-2 border-gray-100 px-4 text-sm font-medium">Any week</button>
+                    <button class="border-gray-100 px-4 gray-text">Add guests</button>
+                    <i class="fa-solid fa-magnifying-glass bg-red-500 text-white rounded-full p-2"></i>
+                </div>
+            </div>
+        
+
+            <div class="flex justify-end items-center pr-15 gap-8">
+                <p class="text-sm font-medium">Airbnb your home</p>
+                <span class="material-symbols-outlined">language</span>
+                <div class="flex justify-evenly items-center py-1.25 pr-1.25 pl-3 gap-2 rounded-full shadow-md h-10 w-20 border">
+                    <i class="fa-solid fa-bars"></i>
+                    <span class="material-symbols-outlined">
+                        account_circle
+                        </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category bar -->
+
+        <div class="h-24 w-screen flex items-center space-x-4 fixed top-20 bg-white">
+            <div class="flex items-center space-x-5 justify-center">
+                <div class="category pl-15">
+                    <img src="static/type1.jpeg" class="hotel-img"/>
+                    <p class="category-text">Amazing pools</p>
+                </div>
+                <div class="category">
+                    <img src="static/type2.jpeg" class="hotel-img"/>
+                    <p class="category-text">Play</p>
+                </div>
+                <div class="category">
+                    <img src="static/type3.jpeg" class="hotel-img"/>
+                    <p class="category-text">Historical Homes</p>
+                </div>
+                <div class="category">
+                    <img src="static/type4.jpeg" class="hotel-img"/>
+                    <p class="category-text">Countryside</p>
+                </div>
+                <div class="category">
+                    <img src="static/type5.jpeg" class="hotel-img"/>
+                    <p class="category-text">Surfing</p>
+                </div>
+                <div class="category">
+                    <img src="static/type6.jpeg" class="hotel-img"/>
+                    <p class="category-text">Farms</p>
+                </div>
+                <div class="category">
+                    <img src="static/type7.jpeg" class="hotel-img"/>
+                    <p class="category-text">Amazing views</p>
+                </div>
+                <div class="category">
+                    <img src="static/type8.jpeg" class="hotel-img"/>
+                    <p class="category-text">Rooms</p>
+                </div>
+                <div class="category">
+                    <img src="static/type9.jpeg" class="hotel-img"/>
+                    <p class="category-text">Lakefront</p>
+                </div>
+                <div class="category">
+                    <img src="static/type10.jpeg" class="hotel-img"/>
+                    <p class="category-text">Beachfront</p>
+                </div>
+                <div class="category">
+                    <img src="static/type11.jpeg" class="hotel-img"/>
+                    <p class="category-text">OMG!</p>
+                </div>
+                <div class="category">
+                    <img src="static/type12.jpeg" class="hotel-img"/>
+                    <p class="category-text">Golfing</p>
+                </div>
+            </div>
+            <span class="material-symbols-outlined pl-2">arrow_circle_right</span>
+            <div class="flex justify-around items-center rounded-xl shadow-md h-12 w-24 border">
+                <span class="material-symbols-outlined pl-2">sync_alt</span>   
+                <p class="text-xs font-medium pr-2">Filters</p>
+            </div>
+            
+            <div class="flex justify-around items-center rounded-xl shadow-md h-12 w-32 border">  
+                <p class="text-xs font-medium pr-5"> Display total before taxes</p>
+                <span class="material-symbols-outlined pl-10 pr-10">
+                    toggle_off
+                    </span>
+            </div>
+
+
+        </div>
+
+    
+        <!-- Price bar -->
+        <section class="flex justify-center w-screen mt-48">
+           
+        </section>
+
+
+        <!-- Hotels -->
+        <div class="mt-14 mx-10 w-screen">
+            <div class="grid grid-cols-4 gap-x-0.5 gap-y-2">
+                <div class="flex flex-col h-96 w-72">
+                    <img src="static/hotel1.png" class="rounded-xl w-72 h-64">
+                    <div class="flex justify-between mt-2">
+                        <p class="text-sm font-medium">Valencia, Spain</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4.87</p>
+                        </div>
+                    </div>
+                    <p class="gray-text">Stay with Sagrario Coach</p>
+                    <p class="gray-text">22-29 Apr</p>
+                    <p class="text-sm font-medium mt-2">₹3,978 night</p>
+                </div>
+
+                <div class="flex flex-col h-96 w-72">
+                    <img src="static/hotel2.png" class="rounded-xl w-72 h-64">
+                    <div class="flex justify-between mt-2">
+                        <p class="text-sm font-medium">Torino,Italy</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4.87</p>
+                        </div>
+                    </div>
+                    <p class="gray-text">Stay with Carmela -Hosting for 7 years</p>
+                    <p class="gray-text">20-25 Nov</p>
+                    <p class="text-sm font-medium mt-2">₹4,221night</p>
+                </div>
+
+                <div class="flex flex-col h-96 w-72">
+                    <img src="static/hotel3.png" class="rounded-xl w-72 h-64">
+                    <div class="flex justify-between mt-2">
+                        <p class="text-sm font-medium">Nantes,France</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4.97</p>
+                        </div>
+                    </div>
+                    <p class="gray-text">Stay with Golwen</p>
+                    <p class="gray-text">26 Nov-1 Dec</p>
+                    <p class="text-sm font-medium mt-2">₹7,468 night</p>
+                </div>
+
+                <div class="flex flex-col h-96 w-72">
+                    <img src="static/hotel4.png" class="rounded-xl w-72 h-64">
+                    <div class="flex justify-between mt-2">
+                        <p class="text-sm font-medium">Lyon,France</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4.99</p>
+                        </div>
+                    </div>
+                    <p class="gray-text">Stay with Edouard-Digitalisation coach</p>
+                    <p class="gray-text">26 Nov-1 Dec</p>
+                    <p class="text-sm font-medium mt-2">₹7,364 night</p>
+                </div>
+
+                <div class="flex flex-col h-96 w-72">
+                    <img src="static/hotel5.png" class="rounded-xl w-72 h-64">
+                    <div class="flex justify-between mt-2">
+                        <p class="text-sm font-medium">Paleroma, Italy</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">5.0</p>
+                        </div>
+                    </div>
+                    <p class="gray-text">Stay with Gandolfo Gabriele-Arist</p>
+                    <p class="gray-text">22-27 Jul</p>
+                    <p class="text-sm font-medium mt-2">₹11,000 night</p>
+                </div>
+
+                <div class="flex flex-col h-96 w-72">
+                    <img src="static/hotel6.png" class="rounded-xl w-72 h-64">
+                    <div class="flex justify-between mt-2">
+                        <p class="text-sm font-medium">Mumbai, India</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">3.0</p>
+                        </div>
+                    </div>
+                    <p class="gray-text">Stay with Sara</p>
+                    <p class="gray-text">5-8 Dec</p>
+                    <p class="text-sm font-medium mt-2">₹8,000 night</p>
+                </div>
+
+                <div class="flex flex-col h-96 w-72">
+                    <img src="static/hotel7.png" class="rounded-xl w-72 h-64">
+                    <div class="flex justify-between mt-2">
+                        <p class="text-sm font-medium">Chennai, India</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">4.8</p>
+                        </div>
+                    </div>
+                    <p class="gray-text">Stay with Gugan</p>
+                    <p class="gray-text">25-29 Mar</p>
+                    <p class="text-sm font-medium mt-2">₹18,000 night</p>
+                </div>
+
+                <div class="flex flex-col h-96 w-72">
+                    <img src="static/hotel8.png" class="rounded-xl w-72 h-64">
+                    <div class="flex justify-between mt-2">
+                        <p class="text-sm font-medium">Hyderabad, India</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">2.0</p>
+                        </div>
+                    </div>
+                    <p class="gray-text">Tribal stay</p>
+                    <p class="gray-text">05-09 Aug</p>
+                    <p class="text-sm font-medium mt-2">₹5,000 night</p>
+                </div>
+
+                <div class="flex flex-col h-96 w-72">
+                    <img src="static/img1.jpg" class="rounded-xl w-72 h-64">
+                    <div class="flex justify-between mt-2">
+                        <p class="text-sm font-medium">Jharkhand, India</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">5.0</p>
+                        </div>
+                    </div>
+                    <p class="gray-text">Stay with Sara</p>
+                    <p class="gray-text">5-8 Dec</p>
+                    <p class="text-sm font-medium mt-2">₹8,000 night</p>
+                </div>
+
+                <div class="flex flex-col h-96 w-72">
+                    <img src="static/img2.jpg" class="rounded-xl w-72 h-64">
+                    <div class="flex justify-between mt-2">
+                        <p class="text-sm font-medium">Lonavla, India</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">5.0</p>
+                        </div>
+                    </div>
+                    <p class="gray-text">Stay with Golwen</p>
+                    <p class="gray-text">26 Nov-1 Dec</p>
+                    <p class="text-sm font-medium mt-2">₹7,468 night</p>
+                </div>
+
+                <div class="flex flex-col h-96 w-72">
+                    <img src="static/img3.jpg" class="rounded-xl w-72 h-64">
+                    <div class="flex justify-between mt-2">
+                        <p class="text-sm font-medium">Lonavla, India</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">5.0</p>
+                        </div>
+                    </div>
+                    <p class="gray-text">Stay with Carmela -Hosting for 7 years</p>
+                    <p class="gray-text">20-25 Nov</p>
+                    <p class="text-sm font-medium mt-2">₹4,221night</p>
+                </div>
+
+                <div class="flex flex-col h-96 w-72">
+                    <img src="static/img4.jpg" class="rounded-xl w-72 h-64">
+                    <div class="flex justify-between mt-2">
+                        <p class="text-sm font-medium">Lonavla, India</p>
+                        <div class="flex">
+                            <i class="fa-solid fa-star"></i>
+                            <p class="text-sm font-light">5.0</p>
+                        </div>
+                    </div>
+                    <p class="gray-text">Stay with Sagrario Coach</p>
+                    <p class="gray-text">22-29 Apr</p>
+                    <p class="text-sm font-medium mt-2">₹3,978 night</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="h-12 bottom-0 w-screen bg-white flex justify-between items-center px-10">
+                <div class="flex space-x-2 text-sm font-base">
+                    <p>© 2023 Airbnb, Inc.</p>
+                    <p>·</p>
+                    <p>Privacy</p>
+                    <p>·</p>
+                    <p>Terms</p>
+                    <p>·</p>
+                    <p>Sitemap</p>
+                    <p>·</p>
+                    <p>Company details</p>
+                </div>
+                <div class="flex space-x-4 text-sm font-medium">
+                    <span class="material-symbols-outlined">language</span>
+                    <p>English(IN)</p>
+                    <p>₹ INR</p>
+                    <p>Support & resources</p>
+                </div>
+        </footer>
+
+    </div>
+
+    
+    
+</body>
+</html>
